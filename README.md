@@ -14,3 +14,7 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ streamlit run app.py
 ```
+
+## Streamlit Cloud
+This app are also hosted in Streamlit cloud, url:
+https://appeda-tyjio7xx2wb5x9n56sb5bc.streamlit.app/

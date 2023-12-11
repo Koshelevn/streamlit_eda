@@ -7,7 +7,7 @@ import plotly.express as px
 import seaborn as sns
 
 NUM_FEATURES = ['AGE', 'CHILD_TOTAL', 'EDUCATION', 'WORK_TIME',
-                'PERSONAL_INCOME', 'CREDIT', 'LOANS_OPEN', 'LOANS_CLOSED']
+                'PERSONAL_INCOME', 'CREDIT', 'LOANS_CLOSED']
 
 def draw(data: pd.DataFrame):
     st.title('Пример данных:')
@@ -163,6 +163,7 @@ def target(data):
 def num_characteristics(data):
     st.title('Числовые характеристики')
     st.dataframe(data.loc[:, NUM_FEATURES].describe())
+
 
 if __name__ == '__main__':
     draw(get_data('data'))
